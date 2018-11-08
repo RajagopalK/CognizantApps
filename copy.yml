@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+
+  tasks:
+  - name: invoking  shell script
+    script:  ./assign3.sh 

@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+
+  tasks:
+
+  - maven_artifact:
+     group_id: com.sample
+     extension: war
+     artifact_id: test
+     repository_url: 'http://localhost:8081/repository/maven-releases/' 
+     username: admin
+     password: admin123
+     dest: ./artifacts
